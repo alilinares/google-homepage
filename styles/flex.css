@@ -1,0 +1,19 @@
+.flex {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-sec-flex{
+    height:70vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:600px){
+    footer .flex{
+        flex-direction: column;
+        text-align:center;
+    }
+}
