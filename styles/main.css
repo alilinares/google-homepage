@@ -54,22 +54,42 @@ main{
 }
 #google-logo{
     display:block;
-    width:30vh;
+}
+
+.input-container{
+    width:45%;
+    margin: 1em auto;
+}
+
+.input-container i{
+    position: relative;
+    top: 34px;
+    left: 20px;
+    font-weight: 600;
+    color: rgba(109, 109, 109, 0.479);
 }
 
 input{
-    display: block;
-    width: 500px;
-    margin: 2em auto;
-    padding: 1.5em;
-    padding-left: 35px;
-    border-radius: 50px;
-    border: 1px solid hsl(0, 4%, 90%);
+    width: 100%;
+    padding: 1.2em;
+    padding-left: 50px;
+    border-radius: 55px;
+    border: 1px solid hsl(192, 7%, 90%);
     outline: none;
-    background-image: url(../media/images/magnifying-glass.png),url(../media/images/google-mic-logo.png);
-    background-repeat: no-repeat,no-repeat;
-    background-position: 10px 15px,470px;
-    background-size: 15px,15px;
+}
+
+.google-mic{
+    background: scroll url(../media/images/google-mic-logo.png) right/14px no-repeat;
+    height: 30px;
+    position: relative;
+    bottom: 40px;
+    right: 20px;
+    width: 5%;
+    margin: 0 0 0 35em;
+}
+
+.google-mic:hover{
+    cursor: pointer;
 }
 
 input:hover{

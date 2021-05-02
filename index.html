@@ -8,6 +8,7 @@
     <!-- css links -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/flex.css">
+    <script src="https://kit.fontawesome.com/370a7a48d1.js" crossorigin="anonymous" defer></script>
   </head>
   <body>
     <header>
@@ -27,8 +28,13 @@
     <main>
         <section class="flex main-sec-flex">
             <img id="google-logo" src="media/images/google-logo.png" alt="google logo"/>
-            <form action="sent_action" method="get">
-                    <input type="text" name="search">
+            <form action="" method="get">
+                <div class="input-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" name="search" />
+                    <div class="google-mic"></div>
+                </div>
+                    
                     <div class="btn-container">
                     <button class="btn" name="search" type="submit" value="google-search">Google Search</button>
                     <button class="btn" name="feeling lucky" type="submit" value="feeling-lucky">I'm Feeling Lucky</button>
