@@ -1,4 +1,5 @@
 let results = document.getElementById('results');
+let resultContainer = document.getElementById('result-container');
 let input = document.getElementById('google-search');
 let inputContainer = document.querySelector('.input-container');
 let mainSection = document.getElementById('main-section');
@@ -56,6 +57,7 @@ for(let i = 0; i <= 5;i++){
 input.addEventListener('click',(e)=>{
     if(results.children.length > 0){
         results.style.display = "block";
+        resultContainer.style.display = "block";
         insertStyles();
     }
     e.stopPropagation();
