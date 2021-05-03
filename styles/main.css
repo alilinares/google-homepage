@@ -54,6 +54,11 @@ main{
 }
 #google-logo{
     display:block;
+    width:20%;
+}
+
+form{
+    position: relative;
 }
 
 .input-container{
@@ -61,44 +66,92 @@ main{
     margin: 1em auto;
 }
 
-.input-container i{
+.input-container .magnify-glass{
     position: relative;
-    top: 34px;
+    bottom: 34px;
     left: 20px;
     font-weight: 600;
     color: rgba(109, 109, 109, 0.479);
+    font-size: 13px;
 }
 
 input{
     width: 100%;
-    padding: 1.2em;
+    padding: 1em;
     padding-left: 50px;
     border-radius: 55px;
     border: 1px solid hsl(192, 7%, 90%);
     outline: none;
 }
 
-.google-mic{
-    background: scroll url(../media/images/google-mic-logo.png) right/14px no-repeat;
-    height: 30px;
-    position: relative;
-    bottom: 40px;
+.google-mic-logo{
+    width: 12px;
+    position: absolute;
+    top: 17.5px;
     right: 20px;
-    width: 5%;
-    margin: 0 0 0 35em;
 }
 
-.google-mic:hover{
+.google-mic-logo:hover{
     cursor: pointer;
+}
+
+
+.results{
+    display:none;
+    position: relative;
+    bottom: 25px;
+    margin: 0 auto;
+}
+.results p{
+    margin:0 auto;
+    font-size:0.98rem;
+}
+
+.results .title{
+    color:rgb(104, 104, 104);
 }
 
 input:hover{
     box-shadow: 0 0 5px rgb(213, 213, 216);
 }
 
-form{
-    width:91.5%;
-    margin:0 auto;
+#result-para{
+    position: relative;
+}
+
+#results #result-para:first-child .list-item::after{
+    content:" - Google Search";
+    color: rgb(145, 145, 145);
+}
+
+.list-item::before{
+    font-family: "Font Awesome 5 Free";
+    content:"\f017";
+    font-weight: 400;
+    margin:0 12px;
+    color:#5f6368c0;
+}
+
+
+.list-item{
+    padding:0.5em;
+}
+
+#x-icon{
+    display: none;
+    position: absolute;
+    left: 95.2%;
+    bottom: 30%;
+    font-size: 0.8rem;
+    color:rgb(65, 65, 65);
+}
+
+#x-icon:hover{
+    cursor: pointer;
+}
+
+.list-item:hover{
+    background-color: hsl(0, 0%, 88%);
 }
 
 .btn-container{
@@ -127,13 +180,31 @@ form{
     color:black;
     cursor: pointer;
 }
+
+.google-offer{
+    margin:2em auto;
+    font-size:0.89rem;
+}
 /* footer */
 
 footer{
-    padding:0.6em;
-    border-top:1px solid hsl(0, 1%, 85%);
     background-color: #f2f2f2;
+}
+.footer-1,.footer-2{
+    padding:1em;
+}
 
+.footer-1{
+    border-bottom:1px solid hsl(0, 1%, 85%);
+    color:#5f6368;
+}
+
+.footer-1 p{
+    margin-left:1em;
+}
+
+.footer-2{
+    
 }
 
 footer .nav-link{
@@ -156,8 +227,33 @@ footer .nav-link{
     }
 
     input{
-        width:300px;
+        width:100%;
+        padding:0.8em;
         background-position: 10px 15px,270px;
+    }
+
+    .input-container .magnify-glass{
+        position: relative;
+        bottom: 43px;
+        left: 5%;
+        font-weight: 600;
+        color: rgba(109, 109, 109, 0.479);
+        font-size: 8px;
+    }
+
+    .google-mic-logo {
+        width: 7px;
+        position: absolute;
+        top: 4.5px;
+        right: 13px;
+    }
+    
+    .results{
+        bottom:15px;
+    }
+    .results p {
+        margin: 0 auto;
+        font-size: 0.5rem;
     }
 
     .btn{

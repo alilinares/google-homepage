@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Google</title>
     <!-- css links -->
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/flex.css">
     <script src="https://kit.fontawesome.com/370a7a48d1.js" crossorigin="anonymous" defer></script>
@@ -26,25 +27,27 @@
         </nav>
     </header>
     <main>
-        <section class="flex main-sec-flex">
+        <section id='main-section' class="flex main-sec-flex">
             <img id="google-logo" src="media/images/google-logo.png" alt="google logo"/>
-            <form action="" method="get">
-                <div class="input-container">
-                    <i class="fas fa-search"></i>
-                    <input type="text" name="search" />
-                    <div class="google-mic"></div>
-                </div>
+            <div class="input-container">
+                <form action="" method="get">
+                    <input type="text" name="search" id="google-search" />
+                    <i class="fas fa-search magnify-glass"></i>
+                    <img src="./media/images/google-mic-logo.png" alt="google-mic-logo" class="google-mic-logo">
+                </form>
+                <div id="results" class="results"></div>
+            </div>
                     
-                    <div class="btn-container">
-                    <button class="btn" name="search" type="submit" value="google-search">Google Search</button>
-                    <button class="btn" name="feeling lucky" type="submit" value="feeling-lucky">I'm Feeling Lucky</button>
-                    </div>
-            </form>
+            <div class="btn-container">
+                <button class="btn" name="search" type="submit" value="google-search">Google Search</button>
+                <button class="btn" name="feeling lucky" type="submit" value="feeling-lucky">I'm Feeling Lucky</button>
+            </div>
+            <p class='google-offer'>Google offered in: <a href="#">Français</a></p>
         </section>
     </main>
     <footer>
-        <p></p>
-        <div class="flex">
+        <div class="footer-1"><p>Canada</p></div>
+        <div class="flex footer-2">
             <div class="nav-1">
                 <a class="nav-link" href="#">Advertising</a>
                 <a class="nav-link" href="#">Business</a>
@@ -57,5 +60,6 @@
             </div>
         </div>
     </footer>
+    <script src="./scripts/index.js" defer></script>
   </body>
 </html>
