@@ -1,7 +1,5 @@
 # Project 1 - Google Homepage
 
-Using only html and css, this project builds a fake landing google homepage.
-
-Will use the following techniques: 
-1. Flexbox
-2. Grid
+[live](https://alilinares.github.io/google-homepage/)
+---
+Incorporates html5,css3 and Javascript. Taking advantage of the new semantics, media queries, the DOM and events respectively.
