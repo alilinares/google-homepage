@@ -13,7 +13,7 @@ let randomSearches = [
 'java vs javascript',
 'what is the difference between var, let and const?',
 "Why do we separate HTML and CSS?",
-"What are classes and IDs (and how are they different)?",
+"What are classes and IDs?",
 "What are elements?",
 "What are tags?",
 "What are attributes?",
@@ -25,11 +25,18 @@ let randomSearches = [
 "What is the “query string” in a URL and what does it do?",
 "What is the difference between “pixels” and “ems”?",
 "How do CSS styles for a particular element get inherited?",
-"What are two CSS attributes you can change to push an element around on the page?",
-"What are the three different ways to include CSS in your project or use CSS to style a particular element?",
+"css grid",
+"css flexbox",
+"javascript dom",
+"javascript prototypes",
+"how to be a good programmer",
+"stackoverflow",
+"the odin project",
+"freecodecamp",
+"mdn",
 "What is the “default stylesheet” or “user agent stylesheet”?",
 "Why use a CSS reset file?",
-"google google is dangerous"];
+"why is googling google dangerous?"];
 
 for(let i = 0; i <= 5;i++){
     let div = createDiv();   
